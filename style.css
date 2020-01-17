@@ -450,7 +450,7 @@ img {
 
 /* :: Header Area CSS */
 #sideNav img {
-  width: 300px !important; }
+  width: 280px !important; }
 
 .header-area {
   position: fixed;
@@ -768,8 +768,6 @@ img {
     top: 20%;
     left: 25px;
     margin-top: 50px; }
-    .single-portfolio-item.portfolio-item-7 img {
-      transform: translate(-90deg); }
     .single-portfolio-item.portfolio-item-7 .backend-content .dots {
       position: absolute;
       z-index: -1;
@@ -791,6 +789,8 @@ img {
     margin-top: 50px;
     left: -110%;
     top: 10%; }
+    .single-portfolio-item.portfolio-item-8 #portfolio_imgs img {
+      width: 400px; }
     .single-portfolio-item.portfolio-item-8 .backend-content .dots {
       position: absolute;
       z-index: -1;

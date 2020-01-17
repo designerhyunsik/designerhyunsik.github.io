@@ -533,7 +533,7 @@ img {
 
 /* :: Header Area CSS */
 #sideNav img{
-        width: 300px !important;
+        width: 280px !important;
     }
 .header-area {
     position: fixed;
@@ -909,9 +909,6 @@ img {
         top: 20%;
         left: 25px;
         margin-top: 50px;
-        img{
-            transform: translate(-90deg);
-        }
         .backend-content {
             .dots {
                 position: absolute;
@@ -938,6 +935,11 @@ img {
         margin-top: 50px;
         left: -110%;
         top: 10%;
+        #portfolio_imgs{
+            img{
+                width: 400px;
+            }
+        }
         .backend-content {
             .dots {
                 position: absolute;
@@ -1598,6 +1600,12 @@ img {
 /* :: About Area CSS */
 
 .sonar-about-us-area {
+    #group_img{
+        background-position: right center !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
     position: relative;
     z-index: 1;
     padding: 120px 0;
