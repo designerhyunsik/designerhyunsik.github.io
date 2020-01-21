@@ -541,6 +541,8 @@ img {
     @media only screen and (max-width: 767px) {
       .mainMenu .copywrite-text p {
         font-size: 14px; } }
+    .mainMenu .copywrite-text p span {
+      color: #fff; }
   .mainMenu .copywrite-text a {
     font-weight: 100;
     color: #ffffff; }
@@ -651,6 +653,9 @@ img {
       background-color: #ffffff; }
 
 /* :: Portfolio Area CSS */
+#portfolio_imgs1 img {
+  width: 400px; }
+
 .portfolio-area {
   overflow-x: hidden; }
   .portfolio-area .portfolio-title h2 {
@@ -789,8 +794,6 @@ img {
     margin-top: 50px;
     left: -110%;
     top: 10%; }
-    .single-portfolio-item.portfolio-item-8 #portfolio_imgs img {
-      width: 400px; }
     .single-portfolio-item.portfolio-item-8 .backend-content .dots {
       position: absolute;
       z-index: -1;
@@ -999,9 +1002,12 @@ img {
         border-bottom: 1px solid #fff; }
     .hero-area .hero-content p {
       color: #ffffff;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      color: #fff; }
       .hero-area .hero-content p span {
         font-weight: 700; }
+      .hero-area .hero-content p a {
+        color: #fff; }
     .hero-area .hero-content.aboutUs {
       height: 1100px; }
       @media only screen and (max-width: 767px) {
@@ -1325,6 +1331,10 @@ img {
   z-index: 1;
   padding: 120px 0;
   overflow: hidden; }
+  .sonar-about-us-area #group_img {
+    background-position: right center !important;
+    background-size: cover;
+    background-repeat: no-repeat; }
   .sonar-about-us-area::after {
     content: "";
     width: 50%;

@@ -634,6 +634,9 @@ img {
             @media #{$breakpoint-xs} {
                 font-size: 14px;
             }
+            span{
+                color: #fff;
+            }
         }
         a {
             font-weight: 100;
@@ -764,7 +767,11 @@ img {
 }
 
 /* :: Portfolio Area CSS */
-
+#portfolio_imgs1{
+    img{
+        width: 400px;
+    }
+}
 .portfolio-area {
     overflow-x: hidden;
     .portfolio-title {
@@ -935,11 +942,7 @@ img {
         margin-top: 50px;
         left: -110%;
         top: 10%;
-        #portfolio_imgs{
-            img{
-                width: 400px;
-            }
-        }
+        
         .backend-content {
             .dots {
                 position: absolute;
@@ -1186,8 +1189,12 @@ img {
         p {
             color: $color-white;
             margin-bottom: 30px;
+            color: #fff;
             span{
                 font-weight: 700;
+            }
+            a{
+                color: #fff;
             }
         }
         &.aboutUs {
