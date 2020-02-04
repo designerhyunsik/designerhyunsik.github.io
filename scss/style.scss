@@ -1,12 +1,11 @@
 /* [ -- Master Stylesheet -- ] */
 
 /* ----------------------------------------------------------
-:: Template Name: Sonar - Photography Template
-:: Author: Colorlib
-:: Author URL: https://colorlib.com
+:: Author: Hyunsik Kim
+:: Author URL: designerhyunsik
 :: Version: 1.0
-:: Created: March 09, 2018
-:: Last Updated: March 09, 2018
+:: Created: Dec 09, 2019
+:: Last Updated: Jan 09, 2018
 ---------------------------------------------------------- */
 
 @import 'theme_color';
@@ -832,13 +831,14 @@ img {
     }
     .portfolio-meta {
         padding-top: 30px;
+        margin-bottom: 30px;
         p {
             font-weight: 500;
             font-size: 14px;
             margin-bottom: 5px;
         }
         h2 {
-            font-size: 30px;
+            font-size: 45px;
             @media #{$breakpoint-xs} {
                 font-size: 24px;
             }
@@ -858,10 +858,11 @@ img {
             }
         }
         .portfolio-thum img{
-            width: 960px;
+            width: 1200px;
         }
     }
     &.portfolio-item-2 {
+        margin-top: 500px;
         .backend-content {
             .dots {
                 position: absolute;
@@ -871,179 +872,175 @@ img {
                 right: -150px;
             }
         }
-        .portfolio-thumb{
-            margin-top: 300px;
-                        
-        }
     }
-    &.portfolio-item-3 {
-        .backend-content {
-            .dots {
-                top: 0;
-                left: -200px;
-                right: auto;
-                @include transform(rotate(90deg));
-            }
-            h2 {
-                top: -180px;
-                left: 30%;
-                right: auto;
-                @media #{$breakpoint-lg} {
-                    top: -130px;
-                }
-                @media #{$breakpoint-md} {
-                    top: -90px;
-                    font-size: 100px;
-                }
-                @media #{$breakpoint-xs} {
-                    top: -70px;
-                }
-            }
-        }
-        @media #{$breakpoint-xs} {
-            margin-bottom: 100px;
-        }
-    }
-    &.portfolio-item-4 {
-        top: -220px;
-        .backend-content {
-            .dots {
-                top: auto;
-                bottom: -130px;
-                left: 70%;
-                right: auto;
-                @include transform(rotate(90deg));
-            }
-        }
-        @media #{$breakpoint-xs} {
-            top: 0;
-            margin-bottom: 100px;
-        }
-    }
-    &.portfolio-item-5 {
-        top: -450px;
-        height: 0;
-        @media #{$breakpoint-xs} {
-            top: 0;
-            height: auto;
-            margin-bottom: 100px;
-        }
-        @media #{$breakpoint-md} {
-            top: -230px;
-        }
-    }
-    &.portfolio-item-6 {
-        top: 0;
-        height: 0;
-        @media #{$breakpoint-xs} {
-            height: auto;
-            margin-bottom: 100px;
-        }
-    }
-    &.portfolio-item-7 {
-        top: 20%;
-        left: 25px;
-        margin-top: 50px;
-        .backend-content {
-            .dots {
-                position: absolute;
-                z-index: -1;
-                top: 100PX;
-                bottom: 0;
-                left: auto;
-                right: -150px;
-            }
-            h2 {
-                top: 250px;
-                left: 30%;
-                right: auto;
-                @media #{$breakpoint-lg} {
-                    top: -100px;
-                }
-                @media #{$breakpoint-xs} {
-                    top: -60px;
-                }
-            }
-        }
-    }
-    &.portfolio-item-8 {
-        margin-top: 50px;
-        left: -110%;
-        top: 10%;
+    // &.portfolio-item-3 {
+    //     .backend-content {
+    //         .dots {
+    //             top: 0;
+    //             left: -200px;
+    //             right: auto;
+    //             @include transform(rotate(90deg));
+    //         }
+    //         h2 {
+    //             top: -180px;
+    //             left: 30%;
+    //             right: auto;
+    //             @media #{$breakpoint-lg} {
+    //                 top: -130px;
+    //             }
+    //             @media #{$breakpoint-md} {
+    //                 top: -90px;
+    //                 font-size: 100px;
+    //             }
+    //             @media #{$breakpoint-xs} {
+    //                 top: -70px;
+    //             }
+    //         }
+    //     }
+    //     @media #{$breakpoint-xs} {
+    //         margin-bottom: 100px;
+    //     }
+    // }
+    // &.portfolio-item-4 {
+    //     top: -220px;
+    //     .backend-content {
+    //         .dots {
+    //             top: auto;
+    //             bottom: -130px;
+    //             left: 70%;
+    //             right: auto;
+    //             @include transform(rotate(90deg));
+    //         }
+    //     }
+    //     @media #{$breakpoint-xs} {
+    //         top: 0;
+    //         margin-bottom: 100px;
+    //     }
+    // }
+    // &.portfolio-item-5 {
+    //     top: -450px;
+    //     height: 0;
+    //     @media #{$breakpoint-xs} {
+    //         top: 0;
+    //         height: auto;
+    //         margin-bottom: 100px;
+    //     }
+    //     @media #{$breakpoint-md} {
+    //         top: -230px;
+    //     }
+    // }
+    // &.portfolio-item-6 {
+    //     top: 0;
+    //     height: 0;
+    //     @media #{$breakpoint-xs} {
+    //         height: auto;
+    //         margin-bottom: 100px;
+    //     }
+    // }
+    // &.portfolio-item-7 {
+    //     top: 20%;
+    //     left: 25px;
+    //     margin-top: 50px;
+    //     .backend-content {
+    //         .dots {
+    //             position: absolute;
+    //             z-index: -1;
+    //             top: 100PX;
+    //             bottom: 0;
+    //             left: auto;
+    //             right: -150px;
+    //         }
+    //         h2 {
+    //             top: 250px;
+    //             left: 30%;
+    //             right: auto;
+    //             @media #{$breakpoint-lg} {
+    //                 top: -100px;
+    //             }
+    //             @media #{$breakpoint-xs} {
+    //                 top: -60px;
+    //             }
+    //         }
+    //     }
+    // }
+    // &.portfolio-item-8 {
+    //     margin-top: 50px;
+    //     left: -110%;
+    //     top: 10%;
         
-        .backend-content {
-            .dots {
-                position: absolute;
-                z-index: -1;
-                top: auto;
-                bottom: 0;
-                left: auto;
-                right: -150px;
-            }
-            h2 {
-                top: -180px;
-                left: 30%;
-                right: auto;
-                @media #{$breakpoint-lg} {
-                    top: -100px;
-                }
-                @media #{$breakpoint-xs} {
-                    top: -60px;
-                }
-            }
-        }
-    }
-    &.portfolio-item-9 {
-        margin-top: 50px;
-        left: 0%;
-        .backend-content {
-            .dots {
-                position: absolute;
-                z-index: -1;
-                top: auto;
-                bottom: 0;
-                left: auto;
-                right: -150px;
-            }
-            h2 {
-                top: -180px;
-                left: 30%;
-                right: auto;
-                @media #{$breakpoint-lg} {
-                    top: -100px;
-                }
-                @media #{$breakpoint-xs} {
-                    top: -60px;
-                }
-            }
-        }
-    }
-    &.portfolio-item-10 {
-        margin-top: 50px;
-        left: -190%;
-        top: -50%;
-        .backend-content {
-            .dots {
-                position: absolute;
-                z-index: -1;
-                top: auto;
-                bottom: 0;
-                left: auto;
-                right: -150px;
-            }
-            h2 {
-                top: -180px;
-                left: 30%;
-                right: auto;
-                @media #{$breakpoint-lg} {
-                    top: -100px;
-                }
-                @media #{$breakpoint-xs} {
-                    top: -60px;
-                }
-            }
-        }
-    }
+    //     .backend-content {
+    //         .dots {
+    //             position: absolute;
+    //             z-index: -1;
+    //             top: auto;
+    //             bottom: 0;
+    //             left: auto;
+    //             right: -150px;
+    //         }
+    //         h2 {
+    //             top: -180px;
+    //             left: 30%;
+    //             right: auto;
+    //             @media #{$breakpoint-lg} {
+    //                 top: -100px;
+    //             }
+    //             @media #{$breakpoint-xs} {
+    //                 top: -60px;
+    //             }
+    //         }
+    //     }
+    // }
+    // &.portfolio-item-9 {
+    //     margin-top: 50px;
+    //     left: 0%;
+    //     .backend-content {
+    //         .dots {
+    //             position: absolute;
+    //             z-index: -1;
+    //             top: auto;
+    //             bottom: 0;
+    //             left: auto;
+    //             right: -150px;
+    //         }
+    //         h2 {
+    //             top: -180px;
+    //             left: 30%;
+    //             right: auto;
+    //             @media #{$breakpoint-lg} {
+    //                 top: -100px;
+    //             }
+    //             @media #{$breakpoint-xs} {
+    //                 top: -60px;
+    //             }
+    //         }
+    //     }
+    // }
+    // &.portfolio-item-10 {
+    //     margin-top: 50px;
+    //     left: -190%;
+    //     top: -50%;
+    //     .backend-content {
+    //         .dots {
+    //             position: absolute;
+    //             z-index: -1;
+    //             top: auto;
+    //             bottom: 0;
+    //             left: auto;
+    //             right: -150px;
+    //         }
+    //         h2 {
+    //             top: -180px;
+    //             left: 30%;
+    //             right: auto;
+    //             @media #{$breakpoint-lg} {
+    //                 top: -100px;
+    //             }
+    //             @media #{$breakpoint-xs} {
+    //                 top: -60px;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 /* :: Call to Action Area CSS */
@@ -1051,6 +1048,7 @@ img {
 .call-to-action-content {
     text-align: center;
     h2 {
+        margin-top: 100px;
         font-weight: 100;
         font-size: 72px;
         margin-bottom: 15px;
@@ -1087,7 +1085,7 @@ img {
             color: #f0f0f0;
             z-index: -1;
             top: -30px;
-            left: -3%;
+            left: 0;
             @media #{$breakpoint-lg} {
                 font-size: 170px;
                 top: 0;
