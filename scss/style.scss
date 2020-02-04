@@ -61,6 +61,7 @@ a {
     outline: none;
     font-size: 14px;
     font-weight: 700;
+    color: #fff;
     &:hover,
     &:focus {
         @include trans-duration(500ms);
@@ -237,7 +238,9 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.portfolio_bg{
+    background-position: 12% center;
+}
 .bg-transparent {
     background-color: transparent;
 }
@@ -634,9 +637,7 @@ img {
             @media #{$breakpoint-xs} {
                 font-size: 14px;
             }
-            span{
-                color: #fff;
-            }
+            
         }
         a {
             font-weight: 100;
@@ -789,7 +790,13 @@ img {
                 font-size: 30px;
             }
         }
+        img{
+            width: 1920px;
+            margin-left: -405px;
+            margin-top: -100px;
+        }
     }
+    
 }
 
 .single-portfolio-item {
@@ -835,6 +842,23 @@ img {
             @media #{$breakpoint-xs} {
                 font-size: 24px;
             }
+            #skills{
+                font-size: 45px;
+            }
+        }
+    }
+    &.portfolio-item-1 {
+        .backend-content{
+            .dots {
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: auto;
+                right: -150px;
+            }
+        }
+        .portfolio-thum img{
+            width: 960px;
         }
     }
     &.portfolio-item-2 {
@@ -846,6 +870,10 @@ img {
                 left: auto;
                 right: -150px;
             }
+        }
+        .portfolio-thumb{
+            margin-top: 300px;
+                        
         }
     }
     &.portfolio-item-3 {
@@ -1189,12 +1217,8 @@ img {
         p {
             color: $color-white;
             margin-bottom: 30px;
-            color: #fff;
             span{
                 font-weight: 700;
-            }
-            a{
-                color: #fff;
             }
         }
         &.aboutUs {
@@ -1337,13 +1361,24 @@ img {
                     font-size: 20px;
                 }
             }
-            p {
+            p{
                 margin-bottom: 0;
+            }
+            .pagemove a{
+                float: right;
+                font-size: 16px;
+                font-weight: 1.0;
+                margin-top: -60px;
+                margin-right: 20px;
+                color:#BDB7B5;
+            }
+            .pagemove a:hover{
+                color: black;
+                transition: all 0.5s;
             }
         }
     }
 }
-
 .sonar-portfolio-menu {
     position: absolute;
     bottom: 40px;
@@ -1683,7 +1718,7 @@ img {
     &.second-part {
         overflow: hidden;
         .about-us-content {
-            padding: 100px;
+            
             margin-left: 0;
             margin-right: 100px;
             @media #{$breakpoint-lg} {

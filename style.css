@@ -47,7 +47,8 @@ a {
   text-decoration: none;
   outline: none;
   font-size: 14px;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #fff; }
   a:hover, a:focus {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -202,6 +203,9 @@ img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.portfolio_bg {
+  background-position: 12% center; }
 
 .bg-transparent {
   background-color: transparent; }
@@ -541,8 +545,6 @@ img {
     @media only screen and (max-width: 767px) {
       .mainMenu .copywrite-text p {
         font-size: 14px; } }
-    .mainMenu .copywrite-text p span {
-      color: #fff; }
   .mainMenu .copywrite-text a {
     font-weight: 100;
     color: #ffffff; }
@@ -670,6 +672,10 @@ img {
     @media only screen and (max-width: 767px) {
       .portfolio-area .portfolio-title h2 {
         font-size: 30px; } }
+  .portfolio-area .portfolio-title img {
+    width: 1920px;
+    margin-left: -405px;
+    margin-top: -100px; }
 
 .single-portfolio-item {
   position: relative;
@@ -709,12 +715,24 @@ img {
       @media only screen and (max-width: 767px) {
         .single-portfolio-item .portfolio-meta h2 {
           font-size: 24px; } }
+      .single-portfolio-item .portfolio-meta h2 #skills {
+        font-size: 45px; }
+  .single-portfolio-item.portfolio-item-1 .backend-content .dots {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: auto;
+    right: -150px; }
+  .single-portfolio-item.portfolio-item-1 .portfolio-thum img {
+    width: 960px; }
   .single-portfolio-item.portfolio-item-2 .backend-content .dots {
     position: absolute;
     z-index: -1;
     top: 0;
     left: auto;
     right: -150px; }
+  .single-portfolio-item.portfolio-item-2 .portfolio-thumb {
+    margin-top: 300px; }
   .single-portfolio-item.portfolio-item-3 .backend-content .dots {
     top: 0;
     left: -200px;
@@ -1002,12 +1020,9 @@ img {
         border-bottom: 1px solid #fff; }
     .hero-area .hero-content p {
       color: #ffffff;
-      margin-bottom: 30px;
-      color: #fff; }
+      margin-bottom: 30px; }
       .hero-area .hero-content p span {
         font-weight: 700; }
-      .hero-area .hero-content p a {
-        color: #fff; }
     .hero-area .hero-content.aboutUs {
       height: 1100px; }
       @media only screen and (max-width: 767px) {
@@ -1125,6 +1140,16 @@ img {
             font-size: 20px; } }
       .sonar-projects-area .single_gallery_item .gallery-content p {
         margin-bottom: 0; }
+      .sonar-projects-area .single_gallery_item .gallery-content .pagemove a {
+        float: right;
+        font-size: 16px;
+        font-weight: 1.0;
+        margin-top: -60px;
+        margin-right: 20px;
+        color: #BDB7B5; }
+      .sonar-projects-area .single_gallery_item .gallery-content .pagemove a:hover {
+        color: black;
+        transition: all 0.5s; }
 
 .sonar-portfolio-menu {
   position: absolute;
@@ -1394,7 +1419,6 @@ img {
   .sonar-about-us-area.second-part {
     overflow: hidden; }
     .sonar-about-us-area.second-part .about-us-content {
-      padding: 100px;
       margin-left: 0;
       margin-right: 100px; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
