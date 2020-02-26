@@ -1312,11 +1312,28 @@ img {
                 }
             }
         }
+        .post-data{
+            height: 200px;
+            margin-top: -35px;
+            float: right;
+            width: 300px;
+        }
+        .post-data2{
+            height: 190px;
+            margin-top: -155px;
+            float: right;
+            width: 300px;
+        }
+            ul > li{
+                line-height: 30px;
+                display: inline-block;
+            }
+        }
+        
         p {
             margin-bottom: 0;
         }
     }
-}
 /* :: Contact Area CSS */
 
 .contact-form {

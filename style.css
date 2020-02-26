@@ -1095,8 +1095,21 @@ img {
         .single-blog-area .post-content .post-meta a:hover, .single-blog-area .post-content .post-meta a:focus {
           font-size: 12px;
           font-weight: 500; }
-    .single-blog-area .post-content p {
-      margin-bottom: 0; }
+    .single-blog-area .post-content .post-data {
+      height: 200px;
+      margin-top: -35px;
+      float: right;
+      width: 300px; }
+    .single-blog-area .post-content .post-data2 {
+      height: 190px;
+      margin-top: -155px;
+      float: right;
+      width: 300px; }
+    .single-blog-area .post-content ul > li {
+      line-height: 30px;
+      display: inline-block; }
+  .single-blog-area p {
+    margin-bottom: 0; }
 
 /* :: Contact Area CSS */
 .contact-form h2 {
